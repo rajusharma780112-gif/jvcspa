@@ -147,6 +147,11 @@ section{ padding:104px 0; }
 .why-item h3{ font-size:16px; font-weight:700; font-family:var(--body); margin-bottom:10px; color:var(--forest); }
 .why-item p{ font-size:14px; color:var(--stone); line-height:1.6; }
 
+/* ===== LOCATION MAP ===== */
+.location-map{ background:var(--white); }
+.map-embed{ border-radius:4px; overflow:hidden; border:1px solid var(--line); }
+.map-embed iframe{ display:block; filter:grayscale(15%) contrast(1.05); }
+
 /* ===== FAQ ===== */
 .faq{ background:var(--cream); }
 .faq-list{ display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); }
