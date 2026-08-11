@@ -56,6 +56,8 @@ em{ font-style:italic; color:var(--gold); }
   display:flex; align-items:center; justify-content:space-between;
   height:80px; gap:24px;
 }
+.brand{ display:inline-flex; align-items:center; gap:10px; }
+.brand-mark{ width:32px; height:32px; flex-shrink:0; }
 .brand-word{ font-family:var(--display); font-size:21px; color:var(--white); }
 .brand-word em{ color:var(--gold); }
 
@@ -158,6 +160,24 @@ section{ padding:104px 0; }
 .prose{ max-width:740px; margin:0 auto 56px; }
 .prose h2{ font-size:26px; margin-bottom:12px; color:var(--ink); }
 .prose p{ color:var(--stone); font-size:16px; line-height:1.8; }
+.page-image{ max-width:900px; margin:0 auto 8px; border-radius:4px; overflow:hidden; }
+.page-image img{ width:100%; height:380px; object-fit:cover; }
+
+/* ===== BLOG GRID ===== */
+.blog-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.blog-card{ display:block; background:var(--white); border:1px solid var(--line); border-radius:4px; overflow:hidden; transition:transform .2s ease, box-shadow .2s ease; }
+.blog-card:hover{ transform:translateY(-4px); box-shadow:0 16px 34px rgba(30,43,36,0.1); }
+.blog-card-img{ width:100%; height:170px; object-fit:cover; display:block; }
+.blog-card{ padding:0; }
+.blog-card-tag{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); margin:22px 22px 8px; display:block; }
+.blog-card h3{ font-size:19px; color:var(--ink); margin:0 22px 10px; }
+.blog-card p{ font-size:13.5px; color:var(--stone); line-height:1.55; margin:0 22px 16px; }
+.blog-card-link{ font-size:12.5px; font-weight:700; color:var(--gold); margin:0 22px 22px; display:block; }
+.blog-card-link:hover{ color:var(--gold-soft); }
+
+@media (max-width: 900px){
+  .blog-grid{ grid-template-columns:1fr; }
+}
 
 /* ===== LOCATION MAP ===== */
 .location-map{ background:var(--white); }
